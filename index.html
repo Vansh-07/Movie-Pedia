@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Movie Pedia</title>
+</head>
+
+<body>
+    <div class="navbar" id="navbar">
+        <div class="container">
+            <div class="logo-container">
+                <h1 class="logo">Movie Pedia</h1>
+            </div>
+            <!-- <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-items active">Home</li>
+                    <li class="menu-list-items">Bollywood</li>
+                    <li class="menu-list-items">Hollywood</li>
+                    <li class="menu-list-items">Top Rated</li>
+                    <li class="menu-list-items">Trends</li>
+                </ul>
+            </div> -->
+
+        </div>
+    </div>
+    <div class="sidebar">
+        <a href="search.html"><i class="sidebar-icon fa-solid fa-magnifying-glass"></i></a>
+        <i class="sidebar-icon fa-solid fa-house"></i>
+        <i class="sidebar-icon fa-solid fa-tv"></i>
+        <a href="https://www.primevideo.com/" target="_blank"><i class="sidebar-icon fa-brands fa-amazon"></i></a>
+        <a href="https://www.netflix.com/in/" target="_blank" style="text-decoration: none; color: white; font-size:30px;font-weight: bold;">N</a>
+
+    </div>
+
+    <div class="main-container">
+        <div class="content-container">
+            <div class="featured-movies"
+                style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('images/f-1.jpg')">
+                <img src="images/f-t-1.png" class="featured-title" id="django unchained" onclick="getMovie(this.id)">
+            </div>
+
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">NEW RELEASES</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./images/n1.jpg">
+                            <span class="movie-list-item-title">K.G.F: Chapter 2</span>
+                            <button class="movie-list-item-button" id="K.G.F: Chapter 2" onclick="getMovie(this.id)">More Info</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./images/n2.jpg">
+                            <span class="movie-list-item-title">Bhool Bhulaiyaa 2</span>
+                            <button class="movie-list-item-button" id="Bhool Bhulaiyaa 2" onclick="getMovie(this.id)">More Info</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./images/n6.jpg">
+                            <span class="movie-list-item-title">777 Charlie</span>
+                            <button class="movie-list-item-button" id="777 Charlie" onclick="getMovie(this.id)">More Info</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./images/n3.jpg">
+                            <span class="movie-list-item-title">Spiderhead</span>
+                            <button class="movie-list-item-button" id="Spiderhead" onclick="getMovie(this.id)">More Info</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./images/n4.jpg">
+                            <span class="movie-list-item-title">Jayeshbhai Jordaar</span>
+                            <button class="movie-list-item-button" id="Jayeshbhai Jordaar" onclick="getMovie(this.id)">More Info</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./images/n5.jpg">
+                            <span class="movie-list-item-title">The Wrath of God</span>
+                            <button class="movie-list-item-button" id="The Wrath of God" onclick="getMovie(this.id)">More Info</button>
+                        </div>
+                        
+                    </div>
+                    <i class="fa-solid fa-chevron-right arrow"></i>
+                </div>
+            </div>
+
+            <!-- second list starts here -->
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">TOP RATED</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./images/t1.jpg">
+                            <span class="movie-list-item-title">The Shawshank Redemption</span>
+                            <button class="movie-list-item-button" id="The Shawshank Redemption" onclick="getMovie(this.id)">More Info</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./images/t2.jpg">
+                            <span class="movie-list-item-title">The Godfather</span>
+                            <button class="movie-list-item-button" id="The Godfather" onclick="getMovie(this.id)">More Info</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./images/t3.jpg">
+                            <span class="movie-list-item-title">Jai Bhim</span>
+                            <button class="movie-list-item-button" id="Jai Bhim" onclick="getMovie(this.id)">More Info</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./images/t4.jpg">
+                            <span class="movie-list-item-title">Inception</span>
+                            <button class="movie-list-item-button" id="Inception" onclick="getMovie(this.id)">More Info</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./images/t5.jpg">
+                            <span class="movie-list-item-title">K.G.F: Chapter 2</span>
+                            <button class="movie-list-item-button" id="K.G.F: Chapter 2" onclick="getMovie(this.id)">More Info</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./images/t6.jpg">
+                            <span class="movie-list-item-title">Sardar Udham</span>
+                            <button class="movie-list-item-button" id="Sardar Udham" onclick="getMovie(this.id)">More Info</button>
+                        </div>
+                        
+                    </div>
+                    <i class="fa-solid fa-chevron-right arrow"></i>
+                </div>
+            </div>
+
+
+            <!-- third list starts here -->
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">BOLLYWOOD</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list" id="bollywood">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./images/b1.jpg">
+                            <span class="movie-list-item-title">Pushpa</span>
+                            <button class="movie-list-item-button" id="pushpa: the rise" onclick="getMovie(this.id)">More Info</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./images/b6.jpg">
+                            <span class="movie-list-item-title">K.G.F: Chapter 2</span>
+                            <button class="movie-list-item-button" id="K.G.F: Chapter 2" onclick="getMovie(this.id)">More Info</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./images/b3.jpg">
+                            <span class="movie-list-item-title">Shershaah</span>
+                            <button class="movie-list-item-button" id="shershaah" onclick="getMovie(this.id)">More Info</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./images/b2.jpg">
+                            <span class="movie-list-item-title">Chehre</span>
+                            <button class="movie-list-item-button" id="chehre" onclick="getMovie(this.id)">More Info</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./images/b4.jpg">
+                            <span class="movie-list-item-title">83</span>
+                            <button class="movie-list-item-button" id="83" onclick="getMovie(this.id)">More Info</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./images/b5.jpg">
+                            <span class="movie-list-item-title">big bull</span>
+                            <button class="movie-list-item-button" id="big bull" onclick="getMovie(this.id)">More Info</button>
+                        </div>
+                    </div> 
+                    <i class="fa-solid fa-chevron-right arrow"></i>
+                </div>
+            </div>
+
+
+            <!-- fourth list starts here -->
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">HOLLYWOOD</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./images/h1.jpg">
+                            <span class="movie-list-item-title">No Time to Die</span>
+                            <button class="movie-list-item-button" id="no time to die" onclick="getMovie(this.id)">More Info</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./images/h2.jpg">
+                            <span class="movie-list-item-title">Black Widow</span>
+                            <button class="movie-list-item-button" id="Black Widow" onclick="getMovie(this.id)">More Info</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./images/h3.jpg">
+                            <span class="movie-list-item-title">The Suicide Squad</span>
+                            <button class="movie-list-item-button" id="The Suicide Squad" onclick="getMovie(this.id)">More Info</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./images/h4.jpeg">
+                            <span class="movie-list-item-title">Her</span>
+                            <button class="movie-list-item-button" id="Her" onclick="getMovie(this.id)">More Info</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./images/h5.jpg">
+                            <span class="movie-list-item-title">Dune</span>
+                            <button class="movie-list-item-button" id="Dune" onclick="getMovie(this.id)">More Info</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./images/h6.jpg">
+                            <span class="movie-list-item-title">F9: The Fast Saga</span>
+                            <button class="movie-list-item-button" id="F9: The Fast Saga" onclick="getMovie(this.id)">More Info</button>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-chevron-right arrow"></i>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
